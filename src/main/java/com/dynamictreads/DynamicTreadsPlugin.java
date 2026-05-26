@@ -217,10 +217,13 @@ public class DynamicTreadsPlugin extends Plugin {
         int range = eqStats.getArange();
         int magic = eqStats.getAmagic();
 
-        if (magic > melee && magic >= range) {
+        // Battlestaves and other staves carry a high crush bonus (e.g. battlestaff crush +25 vs
+        // magic +12) but are still magic weapons. Treat any positive magic attack as the mage
+        // signal so staves classify correctly, then fall back to range vs melee by magnitude.
+        if (magic > 0) {
             return Style.MAGE;
         }
-        if (range > melee && range >= magic) {
+        if (range > melee) {
             return Style.RANGE;
         }
         return Style.MELEE;

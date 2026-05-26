@@ -1,6 +1,8 @@
 # Dynamic Treads
 
-![Dynamic Treads demo](https://raw.githubusercontent.com/blakelockley/runelite-dynamic-treads/main/screenshots/demo.gif)
+![Dynamic Treads](https://raw.githubusercontent.com/blakelockley/runelite-dynamic-treads/main/screenshots/dynamic-treads.png)
+
+![Dynamic Treads gif](https://raw.githubusercontent.com/blakelockley/runelite-dynamic-treads/main/screenshots/demo.gif)
 
 Avernic Treads change their look to match how you're fighting. Wield a scimitar and they render as Primordial Boots; switch to a bow and they become Pegasian; equip a staff and they're Eternal. Purely visual — only you see the swap, your stats and the actual equipped item are untouched.
 
